@@ -18,7 +18,8 @@
   </header>
   <main>
     <h2>Sign Up for Monthly Subscription</h2>
-    <form id="signupForm">
+    <!-- Replace the action URL with your Formspree endpoint -->
+    <form action="https://formspree.io/f/mgvzkgdr" method="POST" id="signupForm">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required />
       <br/>
@@ -38,29 +39,9 @@
   <footer>
     <p>&copy; 2025 Amma's Kitchen. All rights reserved.</p>
   </footer>
+
   <script>
-    document.getElementById('signupForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const contact = document.getElementById('contact').value;
-      const location = document.getElementById('location').value;
-
-      try {
-        const response = await fetch('http://localhost:3000/signup', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ name, contact, location })
-        });
-
-        const data = await response.json();
-        document.getElementById('result').textContent = data.message || 'Signup successful!';
-        document.getElementById('signupForm').reset();
-      } catch (error) {
-        document.getElementById('result').textContent = 'There was an error signing up. Please try again.';
-      }
-    });
+    // Formspree doesn't need this, so you can remove the JS code for custom fetch
   </script>
 </body>
 </html>
