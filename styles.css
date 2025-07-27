@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: #fff8e0;
+  color: #3e2e19;
+}
+header {
+  background: linear-gradient(90deg, #d4b04c 70%, #68a357 100%);
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background: url('plantain-leaf.jfif') no-repeat center center/cover;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  padding: 2em;
+  position: relative;
+}
+
+.hero-content {
+  color: #fff;                  
+  background: rgba(0,0,0,0.45); 
+  padding: 2em;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: center;          /* Center text */
+  margin: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.hero-img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.cta-btn {
+  background: #68a357;
+  color: #fff;
+  padding: 0.7em 2em;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1em;
+}
+.cta-btn:hover {
+  background: #d4b04c;
+  color: #3e2e19;
+}
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fffbe9cc;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px #d4b04c30;
+}
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f9f5e3;
+}
+.menu-table th, .menu-table td {
+  border: 1px solid #d4b04c;
+  padding: 0.7em;
+  text-align: left;
+}
+.menu-table th {
+  background: #68a357;
+  color: #fff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: auto;
+}
+form label {
+  font-weight: bold;
+}
+form input {
+  padding: 0.5em;
+  border: 1px solid #d4b04c;
+  border-radius: 4px;
+  font-size: 1em;
+}
+form button {
+  background: #68a357;
+  color: #fff;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+form button:hover {
+  background: #d4b04c;
+  color: #3e2e19;
+}
+#form-message {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #68a357;
+}
+footer {
+  text-align: center;
+  background: #d4b04c;
+  color: #fff;
+  padding: 1em 0;
+  Width: 100%;  
+  margin: 2em auto 0;  /* Centers the footer and adds spacing from main content */
+  border-radius: 8px;  /* Optional: rounded corners */
+  box-shadow: 0 4px 20px #d4b04c30; /* Optional: subtle shadow */
+}
+@media (max-width: 700px) {
+  main {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .hero-img {
+    width: 80px;
+  }
+} 
