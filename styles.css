@@ -81,15 +81,24 @@ main {
   width: 100%;
   border-collapse: collapse;
   background: #f9f5e3;
+  table-layout: fixed; /* Makes the table more flexible */
+  overflow-x: auto;  /* Allows horizontal scrolling on small screens */
 }
 .menu-table th, .menu-table td {
   border: 1px solid #d4b04c;
   padding: 0.7em;
   text-align: left;
+  word-wrap: break-word; /* Prevents long text from overflowing */
 }
-.menu-table th {
-  background: #68a357;
-  color: #fff;
+@media (max-width: 700px) {
+  .menu-table {
+    width: 100%; /* Ensures table is full width */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+    .menu-table th, .menu-table td {
+    font-size: 0.9em; /* Slightly smaller text on mobile */
+  }
 }
 form {
   display: flex;
